@@ -1,0 +1,24 @@
+{
+  "name": "deboramind/portfolio",
+  "description": "Calculadora IMC",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "DeboraMind\\CalculadoraIMC\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Débora Almeida"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "nyholm/psr7": "^1.5",
+    "psr/http-message": "^1.0",
+    "nyholm/psr7-server": "^1.0",
+    "psr/http-server-handler": "^1.0",
+    "psr/container": "^1.0",
+    "php-di/php-di": "^6.4"
+  }
+}
