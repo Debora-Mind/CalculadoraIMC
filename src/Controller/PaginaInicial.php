@@ -15,7 +15,8 @@ class PaginaInicial
     {
         $html = $this->renderizaHtml('home.php',
             dados: [
-            'titulo' => 'Calculadora IMC',
+                'titulo' => 'Calculadora IMC',
+                'resultado' => ($_POST['altura'] * $_POST['peso']),
             ]);
 
         return new Response(200, [], $html);

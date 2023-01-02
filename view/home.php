@@ -1,5 +1,7 @@
 <?php
+
 ?>
+
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
@@ -15,11 +17,15 @@
 </head>
 <body>
     <h1>Cálculadora IMC</h1>
-    <form>
+    <form method="post" action="">
         <label for="altura">Altura:</label>
-        <input required name="altura" type="number" placeholder="0.00m">
+        <input required name="altura" id="altura" type="number" placeholder="0.00m">
         <label for="peso">Peso:</label>
-        <input name="peso" type="number" placeholder="00.00Kg">
+        <input name="peso" id=peso type="number" placeholder="00.00Kg">
+        <button class="btn btn-primary">Calcular</button>
     </form>
+    <div>
+        <label>IMC: <?= $resultado ?></label>
+    </div>
 </body>
 </html>
